@@ -1,0 +1,436 @@
+{
+ "autoname": "format:{project_name}",
+ "creation": "2021-04-21 12:38:05.772942",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "type",
+  "current_contract_start_date",
+  "column_break_2",
+  "initial_start_date",
+  "verteco_contract_no",
+  "current_contract_expiry_date",
+  "column_break_4",
+  "sales_rep",
+  "client_ref_no",
+  "client_info_section",
+  "client",
+  "client_emirate",
+  "column_break_14",
+  "client_type",
+  "column_break_16",
+  "client_po_box",
+  "project_info_section",
+  "project_site",
+  "sub_client",
+  "bowl_type",
+  "column_break_22",
+  "project_location",
+  "number_of_units",
+  "location_of_units",
+  "column_break_26",
+  "property_type",
+  "retrofitnew_bowls",
+  "pricing",
+  "documentation_received_section",
+  "signed_contract",
+  "credit_application_form",
+  "column_break_33",
+  "annual_lpo",
+  "column_break_35",
+  "free_on_loan",
+  "invoicing_section",
+  "address_to",
+  "trn_number",
+  "column_break_40",
+  "po_box",
+  "credit_terms",
+  "column_break_43",
+  "city",
+  "any_other_info",
+  "service_schedule_section",
+  "data_47",
+  "amended_from",
+  "small_text_50",
+  "contacts_section",
+  "contact_person",
+  "section_break_60",
+  "other_info_section",
+  "passes_required_each_month",
+  "specific_servicing_weekday",
+  "column_break_61",
+  "how_the_client_wants_to_be_invoiced",
+  "gift_certificate_given",
+  "column_break_64",
+  "where_to_submit_invoice",
+  "pays_every_3_months"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "options": "Project",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nMonthly LPO\nAnnual LPO\nContract"
+  },
+  {
+   "fieldname": "current_contract_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Current Contract Start Date"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_start_date",
+   "fieldtype": "Date",
+   "label": "Initial Start Date"
+  },
+  {
+   "fieldname": "verteco_contract_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "VERTECO Contract No"
+  },
+  {
+   "fieldname": "current_contract_expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Current Contract Expiry Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_rep",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Sales Rep",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "client_ref_no",
+   "fieldtype": "Data",
+   "label": "Client Ref No"
+  },
+  {
+   "fieldname": "client_info_section",
+   "fieldtype": "Section Break",
+   "label": "Client Info"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "client_emirate",
+   "fieldtype": "Select",
+   "label": "Client Emirate",
+   "options": "\nDubai\nAbu Dhabi\nAjman\nSharjah\nFujairah\nRas Al Khaimah\nUmm Al Quwain"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_type",
+   "fieldtype": "Data",
+   "label": "Client Type"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_po_box",
+   "fieldtype": "Data",
+   "label": "Client PO Box"
+  },
+  {
+   "fieldname": "project_info_section",
+   "fieldtype": "Section Break",
+   "label": "Project Info"
+  },
+  {
+   "fieldname": "project_site",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Site"
+  },
+  {
+   "fieldname": "sub_client",
+   "fieldtype": "Data",
+   "label": "Sub Client"
+  },
+  {
+   "fieldname": "bowl_type",
+   "fieldtype": "Data",
+   "label": "Bowl Type"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_location",
+   "fieldtype": "Data",
+   "label": "Project Location"
+  },
+  {
+   "fieldname": "number_of_units",
+   "fieldtype": "Data",
+   "label": "Number of Units"
+  },
+  {
+   "fieldname": "location_of_units",
+   "fieldtype": "Data",
+   "label": "Location of Units"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "label": "Property Type"
+  },
+  {
+   "fieldname": "retrofitnew_bowls",
+   "fieldtype": "Data",
+   "label": "Retrofit/New Bowls"
+  },
+  {
+   "fieldname": "pricing",
+   "fieldtype": "Data",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "documentation_received_section",
+   "fieldtype": "Section Break",
+   "label": "Documentation Received"
+  },
+  {
+   "fieldname": "signed_contract",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Signed Contract",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "credit_application_form",
+   "fieldtype": "Select",
+   "label": "Credit Application Form",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "annual_lpo",
+   "fieldtype": "Select",
+   "label": "Annual LPO",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "free_on_loan",
+   "fieldtype": "Select",
+   "label": "Free On Loan",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "invoicing_section",
+   "fieldtype": "Section Break",
+   "label": "Invoicing"
+  },
+  {
+   "fieldname": "address_to",
+   "fieldtype": "Data",
+   "label": "Address To"
+  },
+  {
+   "fetch_from": "client.tax_id",
+   "fieldname": "trn_number",
+   "fieldtype": "Data",
+   "label": "TRN Number"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_box",
+   "fieldtype": "Data",
+   "label": "PO Box"
+  },
+  {
+   "fieldname": "credit_terms",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Credit Terms",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "any_other_info",
+   "fieldtype": "Small Text",
+   "label": "Any Other Info"
+  },
+  {
+   "fieldname": "service_schedule_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_47",
+   "fieldtype": "Table",
+   "label": "SERVICE SCHEDULE",
+   "options": "Service Schedule"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Contracts",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "small_text_50",
+   "fieldtype": "Data",
+   "label": "Service Notes"
+  },
+  {
+   "fieldname": "contacts_section",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Table",
+   "label": "Contact Person",
+   "options": "Contract Contact List"
+  },
+  {
+   "fieldname": "section_break_60",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "other_info_section",
+   "fieldtype": "Section Break",
+   "label": "Other Info"
+  },
+  {
+   "fieldname": "passes_required_each_month",
+   "fieldtype": "Select",
+   "label": "Passes required each month",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "specific_servicing_weekday",
+   "fieldtype": "Select",
+   "label": "Gift Certificate given",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "how_the_client_wants_to_be_invoiced",
+   "fieldtype": "Data",
+   "label": "How frequently client wants to be invoiced"
+  },
+  {
+   "fieldname": "gift_certificate_given",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specific servicing week/day"
+  },
+  {
+   "fieldname": "column_break_64",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "where_to_submit_invoice",
+   "fieldtype": "Data",
+   "label": "Where to submit invoice"
+  },
+  {
+   "fieldname": "pays_every_3_months",
+   "fieldtype": "Select",
+   "label": "Pays every 3 months",
+   "options": "Yes\nNo"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-05-08 11:42:49.715298",
+ "modified_by": "Administrator",
+ "module": "Verteco",
+ "name": "Contracts",
+ "owner": "david.king@verteco.ae",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

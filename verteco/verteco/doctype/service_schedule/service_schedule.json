@@ -1,0 +1,35 @@
+{
+ "creation": "2021-04-21 13:50:40.875178",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-08 11:43:08.250639",
+ "modified_by": "Administrator",
+ "module": "Verteco",
+ "name": "Service Schedule",
+ "owner": "david.king@verteco.ae",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

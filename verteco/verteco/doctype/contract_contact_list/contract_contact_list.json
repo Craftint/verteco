@@ -1,0 +1,68 @@
+{
+ "creation": "2021-04-24 11:06:40.508767",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_contact",
+  "first_name",
+  "last_name",
+  "designation",
+  "mobile",
+  "email_id"
+ ],
+ "fields": [
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "select_contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "columns": 1,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile"
+  },
+  {
+   "columns": 2,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Id"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-08 11:43:00.184318",
+ "modified_by": "Administrator",
+ "module": "Verteco",
+ "name": "Contract Contact List",
+ "owner": "david.king@verteco.ae",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
