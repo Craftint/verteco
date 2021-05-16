@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "format:{project_name}",
  "creation": "2021-04-21 12:38:05.772942",
  "doctype": "DocType",
@@ -65,7 +66,9 @@
   "gift_certificate_given",
   "column_break_64",
   "where_to_submit_invoice",
-  "pays_every_3_months"
+  "pays_every_3_months",
+  "section_break_62",
+  "test"
  ],
  "fields": [
   {
@@ -391,14 +394,25 @@
    "fieldtype": "Select",
    "label": "Pays every 3 months",
    "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "section_break_62",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Table",
+   "label": "test",
+   "options": "test table"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-05-08 11:42:49.715298",
+ "links": [],
+ "modified": "2021-05-10 12:36:58.466246",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Contracts",
- "owner": "david.king@verteco.ae",
+ "owner": "Administrator",
  "permissions": [
   {
    "cancel": 1,
