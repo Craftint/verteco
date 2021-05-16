@@ -29,7 +29,7 @@ client:function(frm)
                                 first_name:p.message.contact_list[i].first_name,
                                 last_name:p.message.contact_list[i].last_name,
                                 designation:p.message.contact_list[i].designation,
-                                contact_person:p.message.contact_list[i].mobile_no,
+                                mobile:p.message.contact_list[i].mobile_no,
                                 email_id:p.message.contact_list[i].email_id
                              })
                            }
