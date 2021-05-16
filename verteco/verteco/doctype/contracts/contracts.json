@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "format:{project_name}",
  "creation": "2021-04-21 12:38:05.772942",
  "doctype": "DocType",
@@ -67,8 +66,7 @@
   "column_break_64",
   "where_to_submit_invoice",
   "pays_every_3_months",
-  "section_break_62",
-  "test"
+  "section_break_62"
  ],
  "fields": [
   {
@@ -398,17 +396,10 @@
   {
    "fieldname": "section_break_62",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "test",
-   "fieldtype": "Table",
-   "label": "test",
-   "options": "test table"
   }
  ],
  "is_submittable": 1,
- "links": [],
- "modified": "2021-05-10 12:36:58.466246",
+ "modified": "2021-05-16 11:59:57.297244",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Contracts",

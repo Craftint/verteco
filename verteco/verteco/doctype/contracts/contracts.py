@@ -8,6 +8,12 @@ from frappe import _
 import functools
 import json
 import re
+
+from frappe.model.document import Document
+
+class Contracts(Document):
+	pass
+
 @frappe.whitelist()
 def load_address_and_contact(**doc):
 	"""Loads address list and contact list in `__onload`"""
