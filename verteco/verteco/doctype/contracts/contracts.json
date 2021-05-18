@@ -74,8 +74,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Project Name",
-   "options": "Project",
-   "unique": 1
+   "options": "Project"
   },
   {
    "fieldname": "type",
