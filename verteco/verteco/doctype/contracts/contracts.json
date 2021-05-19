@@ -218,9 +218,10 @@
    "label": "Retrofit/New Bowls"
   },
   {
-   "fieldname": "pricing",
-   "fieldtype": "Data",
-   "label": "Pricing"
+    "fieldname": "pricing",
+    "fieldtype": "Currency",
+    "label": "Pricing",
+    "precision":2
   },
   {
    "fieldname": "documentation_received_section",
