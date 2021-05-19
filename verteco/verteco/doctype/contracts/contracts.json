@@ -1,5 +1,6 @@
 {
- "autoname": "format:{project_name}",
+ "actions": [],
+ "autoname": "CTR-.#####",
  "creation": "2021-04-21 12:38:05.772942",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -58,14 +59,6 @@
   "contact_person",
   "section_break_60",
   "other_info_section",
-  "passes_required_each_month",
-  "specific_servicing_weekday",
-  "column_break_61",
-  "how_the_client_wants_to_be_invoiced",
-  "gift_certificate_given",
-  "column_break_64",
-  "where_to_submit_invoice",
-  "pays_every_3_months",
   "section_break_62"
  ],
  "fields": [
@@ -348,58 +341,17 @@
   },
   {
    "fieldname": "other_info_section",
-   "fieldtype": "Section Break",
-   "label": "Other Info"
-  },
-  {
-   "fieldname": "passes_required_each_month",
-   "fieldtype": "Select",
-   "label": "Passes required each month",
-   "options": "Yes\nNo"
-  },
-  {
-   "fieldname": "specific_servicing_weekday",
-   "fieldtype": "Select",
-   "label": "Gift Certificate given",
-   "options": "Yes\nNo"
-  },
-  {
-   "fieldname": "column_break_61",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "how_the_client_wants_to_be_invoiced",
-   "fieldtype": "Data",
-   "label": "How frequently client wants to be invoiced"
-  },
-  {
-   "fieldname": "gift_certificate_given",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Specific servicing week/day"
-  },
-  {
-   "fieldname": "column_break_64",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "where_to_submit_invoice",
-   "fieldtype": "Data",
-   "label": "Where to submit invoice"
-  },
-  {
-   "fieldname": "pays_every_3_months",
-   "fieldtype": "Select",
-   "label": "Pays every 3 months",
-   "options": "Yes\nNo"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "section_break_62",
-   "fieldtype": "Section Break"
+   "fieldtype": "Small Text",
+   "label": "Other Info"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-05-16 11:59:57.297244",
+ "links": [],
+ "modified": "2021-05-19 14:58:19.921871",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Contracts",
