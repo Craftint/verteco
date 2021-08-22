@@ -1,0 +1,394 @@
+{
+ "actions": [],
+ "autoname": "JO-.#####",
+ "creation": "2021-08-17 14:28:56.159741",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "posting_date",
+  "project_location",
+  "column_break_2",
+  "contract",
+  "assigned_date",
+  "number_of_units",
+  "column_break_8",
+  "status",
+  "project_site",
+  "location_of_units",
+  "clients_address_and_contact_section",
+  "client",
+  "client_emirate",
+  "trn_number",
+  "column_break_10",
+  "client_type",
+  "contact_person",
+  "executive",
+  "column_break_9",
+  "client_po_box",
+  "contact_number",
+  "location",
+  "job_details_section",
+  "service_type",
+  "start_date_time",
+  "column_break_20",
+  "service_category",
+  "end_date_time",
+  "service_description_section",
+  "job_description",
+  "section_break",
+  "valve",
+  "location_1",
+  "replaced_qty_1",
+  "urinal_condition_by_housekeeping",
+  "column_break_36",
+  "cartridge",
+  "location_2",
+  "replaced_qty_2",
+  "column_break_40",
+  "leak_test",
+  "flow_test",
+  "remarks",
+  "section_break_",
+  "items",
+  "remarks_section",
+  "client_remarks",
+  "signatures_section",
+  "employees_signature_column",
+  "employees_signature",
+  "column_break_31",
+  "customers_signature",
+  "column_break_33",
+  "approvals_signature",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nScheduled\nPending\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "JO-.#####"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "assigned_date",
+   "fieldtype": "Date",
+   "label": "Assigned Date"
+  },
+  {
+   "fieldname": "clients_address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "CLIENT'S ADDRESS AND CONTACT"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "executive",
+   "fieldtype": "Select",
+   "label": "Executive",
+   "options": "\nTeam 1\nTeam 2"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "label": "Contract",
+   "options": "Contracts"
+  },
+  {
+   "fetch_from": "contract.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "contract.client_type",
+   "fieldname": "client_type",
+   "fieldtype": "Data",
+   "label": "Client Type"
+  },
+  {
+   "fetch_from": "contract.client_po_box",
+   "fieldname": "client_po_box",
+   "fieldtype": "Data",
+   "label": "Client PO Box"
+  },
+  {
+   "fetch_from": "contract.client_emirate",
+   "fieldname": "client_emirate",
+   "fieldtype": "Data",
+   "label": "Client Emirate"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "job_details_section",
+   "fieldtype": "Section Break",
+   "label": "SERVICE DETAILS"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "label": "Service Type",
+   "options": "\nProactive\nRe active"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_category",
+   "fieldtype": "Select",
+   "label": "Service Category",
+   "options": "\nService\nInstallation\nComplaint\nDelivery"
+  },
+  {
+   "fieldname": "start_date_time",
+   "fieldtype": "Datetime",
+   "label": "Start Date Time"
+  },
+  {
+   "fieldname": "end_date_time",
+   "fieldtype": "Datetime",
+   "label": "End Date Time"
+  },
+  {
+   "fetch_from": "client.tax_id",
+   "fieldname": "trn_number",
+   "fieldtype": "Data",
+   "label": "TRN Number"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Text Editor",
+   "label": "Service Description"
+  },
+  {
+   "fieldname": "client_remarks",
+   "fieldtype": "Small Text",
+   "label": "Client Remarks"
+  },
+  {
+   "fieldname": "signatures_section",
+   "fieldtype": "Section Break",
+   "label": "SIGNATURES"
+  },
+  {
+   "fieldname": "employees_signature",
+   "fieldtype": "Signature",
+   "label": "Employee's Signature"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break",
+   "label": "Customer's Signature"
+  },
+  {
+   "fieldname": "customers_signature",
+   "fieldtype": "Signature",
+   "label": "Customer's Signature"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break",
+   "label": "Approval's Signature"
+  },
+  {
+   "fieldname": "approvals_signature",
+   "fieldtype": "Signature",
+   "label": "Approval's Signature"
+  },
+  {
+   "fieldname": "employees_signature_column",
+   "fieldtype": "Column Break",
+   "label": "Employee's Signature"
+  },
+  {
+   "fieldname": "service_description_section",
+   "fieldtype": "Section Break",
+   "label": "SERVICE DESCRIPTION"
+  },
+  {
+   "fetch_from": "contract.project_site",
+   "fieldname": "project_site",
+   "fieldtype": "Data",
+   "label": "Project Site"
+  },
+  {
+   "fetch_from": "contract.project_location",
+   "fieldname": "project_location",
+   "fieldtype": "Data",
+   "label": "Project Location"
+  },
+  {
+   "fetch_from": "contract.number_of_units",
+   "fieldname": "number_of_units",
+   "fieldtype": "Data",
+   "label": "Number of Units"
+  },
+  {
+   "fetch_from": "contract.location_of_units",
+   "fieldname": "location_of_units",
+   "fieldtype": "Data",
+   "label": "Location of Units"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Materials Supplied",
+   "options": "Job Order Items"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "Check List"
+  },
+  {
+   "fieldname": "valve",
+   "fieldtype": "Select",
+   "label": "Valve",
+   "options": "\nGood\nDamage"
+  },
+  {
+   "fieldname": "location_1",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "replaced_qty_1",
+   "fieldtype": "Data",
+   "label": "Replaced Qty"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cartridge",
+   "fieldtype": "Select",
+   "label": "Cartridge",
+   "options": "\nGood\nEmpty"
+  },
+  {
+   "fieldname": "location_2",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "replaced_qty_2",
+   "fieldtype": "Data",
+   "label": "Replaced Qty"
+  },
+  {
+   "fieldname": "section_break_",
+   "fieldtype": "Section Break",
+   "label": "MATERIAL DETAILS"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "leak_test",
+   "fieldtype": "Check",
+   "label": "Leak Test"
+  },
+  {
+   "default": "0",
+   "fieldname": "flow_test",
+   "fieldtype": "Check",
+   "label": "Flow Test"
+  },
+  {
+   "fieldname": "urinal_condition_by_housekeeping",
+   "fieldtype": "Select",
+   "label": "Urinal Condition by Housekeeping",
+   "options": "\nMaintained Well\nNot Maintained"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "REMARKS"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-08-22 16:02:34.556329",
+ "modified_by": "Administrator",
+ "module": "Verteco",
+ "name": "Job Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
