@@ -13,7 +13,11 @@ def get_data():
                 "doctype": "Contracts",
                 "onboard": 1
             },
-
-
+            {
+                "type": "doctype",
+                "name": "Job Order",
+                "doctype": "Job Order",
+                "onboard": 1
+            },
         ]
     }]
