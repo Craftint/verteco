@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "JO-.#####",
  "creation": "2021-08-17 14:28:56.159741",
  "doctype": "DocType",
@@ -69,8 +68,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Open\nScheduled\nPending\nCompleted\nCancelled"
   },
@@ -365,10 +366,7 @@
    "label": "REMARKS"
   }
  ],
- "index_web_pages_for_search": 1,
- "is_submittable": 1,
- "links": [],
- "modified": "2021-08-22 16:02:34.556329",
+ "modified": "2021-08-28 11:29:18.009434",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Job Order",
