@@ -89,8 +89,9 @@
   },
   {
    "fieldname": "assigned_date",
-   "fieldtype": "Date",
-   "label": "Assigned Date"
+   "fieldtype": "Datetime",
+   "label": "Assigned Date",
+   "reqd": 1
   },
   {
    "fieldname": "clients_address_and_contact_section",
@@ -366,7 +367,7 @@
    "label": "REMARKS"
   }
  ],
- "modified": "2021-08-28 11:29:18.009434",
+ "modified": "2021-08-28 12:46:12.067113",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Job Order",
