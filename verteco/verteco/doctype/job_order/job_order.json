@@ -68,7 +68,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -367,14 +366,13 @@
    "label": "REMARKS"
   }
  ],
- "modified": "2021-08-28 12:46:12.067113",
+ "modified": "2021-09-01 08:23:27.999797",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Job Order",
  "owner": "Administrator",
  "permissions": [
   {
-   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -384,7 +382,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
