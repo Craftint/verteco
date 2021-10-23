@@ -5,6 +5,7 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
+from frappe.utils import add_days
 
 class JobOrder(Document):
 	pass
@@ -30,7 +31,7 @@ def get_job_order_details(start, end, filters=None):
 
 	job_orders = frappe.db.sql("""
 		select
-			distinct `tabJob Order`.name, `tabJob Order`.assigned_date, `tabJob Order`.client, `tabJob Order`.status
+			distinct `tabJob Order`.name, `tabJob Order`.executive, `tabJob Order`.assigned_date, `tabJob Order`.end_date, `tabJob Order`.client, `tabJob Order`.status
 		from
 			`tabJob Order`
 		where
@@ -45,11 +46,14 @@ def get_job_order_details(start, end, filters=None):
 		title_data = []
 		for field in ["client", "status"]:
 			if not d.get(field): continue
+			if d.get("status") in ["Scheduled","Completed"]:
+				title_data.append(d.get("executive"))
 			title_data.append(d.get(field))
 
 		color = job_color.get(d.status)
 
 		job_order_data = {
+			'end_date':add_days(d.end_date, 1),
 			'assigned_date': d.assigned_date,
 			'name': d.name,
 			'title':'\n'.join(title_data),
