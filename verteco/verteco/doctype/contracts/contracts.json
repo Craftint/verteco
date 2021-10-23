@@ -1,21 +1,21 @@
 {
- "actions": [],
  "autoname": "CTR-.#####",
  "creation": "2021-04-21 12:38:05.772942",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "project_name",
   "type",
-  "current_contract_start_date",
   "column_break_2",
   "initial_start_date",
   "verteco_contract_no",
-  "current_contract_expiry_date",
+  "current_contract_start_date",
   "column_break_4",
   "sales_rep",
   "client_ref_no",
+  "current_contract_expiry_date",
   "client_info_section",
   "client",
   "client_emirate",
@@ -78,8 +78,6 @@
   {
    "fieldname": "current_contract_start_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Current Contract Start Date"
   },
   {
@@ -100,8 +98,6 @@
   {
    "fieldname": "current_contract_expiry_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Current Contract Expiry Date"
   },
   {
@@ -144,8 +140,9 @@
   },
   {
    "fieldname": "client_type",
-   "fieldtype": "Data",
-   "label": "Client Type"
+   "fieldtype": "Select",
+   "label": "Client Type",
+   "options": "Automotive\nAviation\nBus Depot\nCinema\nCommercial Office\nCommunity Management\nContractor\nFacility Management\nFood Process + Manufacturer\nHotel\nIndustrial + Manufacturing\nLogistics\nMall\nReal Estate\nRestaurant\nRetail\nScent Marketing\nSchool\nTravel & Tourism"
   },
   {
    "fieldname": "column_break_16",
@@ -211,10 +208,10 @@
    "label": "Retrofit/New Bowls"
   },
   {
-    "fieldname": "pricing",
-    "fieldtype": "Currency",
-    "label": "Pricing",
-    "precision":2
+   "fieldname": "pricing",
+   "fieldtype": "Currency",
+   "label": "Pricing (AED)",
+   "precision": "2"
   },
   {
    "fieldname": "documentation_received_section",
@@ -347,12 +344,17 @@
    "fieldname": "section_break_62",
    "fieldtype": "Small Text",
    "label": "Other Info"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CTR-.#####"
   }
  ],
  "is_submittable": 1,
- "links": [],
- "modified": "2021-05-19 14:58:19.921871",
- "modified_by": "Administrator",
+ "modified": "2021-05-30 15:12:50.893802",
+ "modified_by": "david.king@verteco.ae",
  "module": "Verteco",
  "name": "Contracts",
  "owner": "Administrator",
