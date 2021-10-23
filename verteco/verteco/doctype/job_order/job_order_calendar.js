@@ -1,7 +1,7 @@
 frappe.views.calendar["Job Order"] = {
 	field_map: {
 		"start": "assigned_date",
-		"end": "assigned_date",
+		"end": "end_date",
 		"id": "name",
         "title":"title",
 		"color":"color",

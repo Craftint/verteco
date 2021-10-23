@@ -8,32 +8,32 @@
   "series",
   "posting_date",
   "project_location",
+  "location_of_units",
   "column_break_2",
-  "contract",
+  "client",
   "assigned_date",
+  "project_site",
   "number_of_units",
   "column_break_8",
+  "contract",
+  "end_date",
   "status",
-  "project_site",
-  "location_of_units",
   "clients_address_and_contact_section",
-  "client",
   "client_emirate",
-  "trn_number",
+  "executive",
+  "location",
   "column_break_10",
   "client_type",
   "contact_person",
-  "executive",
   "column_break_9",
   "client_po_box",
   "contact_number",
-  "location",
   "job_details_section",
   "service_type",
   "start_date_time",
   "column_break_20",
-  "service_category",
   "end_date_time",
+  "special_instruction",
   "service_description_section",
   "job_description",
   "section_break",
@@ -104,7 +104,7 @@
   {
    "fieldname": "executive",
    "fieldtype": "Select",
-   "label": "Executive",
+   "label": "Sales Team",
    "options": "\nTeam 1\nTeam 2"
   },
   {
@@ -165,18 +165,12 @@
   {
    "fieldname": "service_type",
    "fieldtype": "Select",
-   "label": "Service Type",
-   "options": "\nProactive\nRe active"
+   "label": "Visit Type",
+   "options": "\nInstallation\nService\nCompliant\nDelivery"
   },
   {
    "fieldname": "column_break_20",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "service_category",
-   "fieldtype": "Select",
-   "label": "Service Category",
-   "options": "\nService\nInstallation\nComplaint\nDelivery"
   },
   {
    "fieldname": "start_date_time",
@@ -187,12 +181,6 @@
    "fieldname": "end_date_time",
    "fieldtype": "Datetime",
    "label": "End Date Time"
-  },
-  {
-   "fetch_from": "client.tax_id",
-   "fieldname": "trn_number",
-   "fieldtype": "Data",
-   "label": "TRN Number"
   },
   {
    "fieldname": "job_description",
@@ -364,9 +352,19 @@
    "fieldname": "remarks_section",
    "fieldtype": "Section Break",
    "label": "REMARKS"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "special_instruction",
+   "fieldtype": "Small Text",
+   "label": "Special Instruction"
   }
  ],
- "modified": "2021-09-01 08:23:27.999797",
+ "modified": "2021-10-20 15:14:23.024284",
  "modified_by": "Administrator",
  "module": "Verteco",
  "name": "Job Order",
