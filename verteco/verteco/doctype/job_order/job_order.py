@@ -44,21 +44,21 @@ def get_job_order_details(start, end, filters=None):
 
 	for d in job_orders:
 		title_data = []
+		title_data.append(d.get("name"))	
 		for field in ["client", "status"]:
 			if not d.get(field): continue
-			if d.get("status") in ["Scheduled","Completed"]:
-				title_data.append(d.get("executive"))
 			title_data.append(d.get(field))
+		if d.get("status") in ["Scheduled","Completed"]:
+			title_data.append(d.get("executive"))
 
 		color = job_color.get(d.status)
 
 		job_order_data = {
-			'end_date':add_days(d.end_date, 1),
+			'end_date':d.end_date,
 			'assigned_date': d.assigned_date,
 			'name': d.name,
 			'title':'\n'.join(title_data),
 			'color': color if color else "#89bcde"
 		}
-		
 		orders.append(job_order_data)
 	return orders
