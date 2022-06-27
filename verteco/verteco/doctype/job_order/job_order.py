@@ -31,7 +31,7 @@ def get_job_order_details(start, end, filters=None):
 
 	job_orders = frappe.db.sql("""
 		select
-			distinct `tabJob Order`.name, `tabJob Order`.executive, `tabJob Order`.assigned_date, `tabJob Order`.end_date, `tabJob Order`.client, `tabJob Order`.status
+			distinct `tabJob Order`.name, `tabJob Order`.executive, `tabJob Order`.assigned_date, `tabJob Order`.end_date, `tabJob Order`.client, `tabJob Order`.status , `tabJob Order`.project_location
 		from
 			`tabJob Order`
 		where
@@ -48,6 +48,7 @@ def get_job_order_details(start, end, filters=None):
 		for field in ["client", "status"]:
 			if not d.get(field): continue
 			title_data.append(d.get(field))
+			title_data.append(d.project_location)
 		if d.get("status") in ["Scheduled","Completed"]:
 			title_data.append(d.get("executive"))
 
@@ -58,7 +59,8 @@ def get_job_order_details(start, end, filters=None):
 			'assigned_date': d.assigned_date,
 			'name': d.name,
 			'title':'\n'.join(title_data),
-			'color': color if color else "#89bcde"
+			'color': color if color else "#89bcde" , 
+			'project_location' : d.project_location
 		}
 		orders.append(job_order_data)
 	return orders
