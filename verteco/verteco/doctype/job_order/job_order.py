@@ -41,19 +41,17 @@ def get_job_order_details(start, end, filters=None):
 			"start": start,
 			"end": end
 		}, as_dict=True, update={"allDay": 0})
-
 	for d in job_orders:
 		title_data = []
 		title_data.append(d.get("name"))	
-		for field in ["client", "status"]:
+		for field in ["client", "status","project_location"]:
 			if not d.get(field): continue
 			title_data.append(d.get(field))
-			title_data.append(d.project_location)
+			# title_data.append(d.project_location)
 		if d.get("status") in ["Scheduled","Completed"]:
 			title_data.append(d.get("executive"))
 
 		color = job_color.get(d.status)
-
 		job_order_data = {
 			'end_date':d.end_date,
 			'assigned_date': d.assigned_date,
